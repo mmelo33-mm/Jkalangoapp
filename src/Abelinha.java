@@ -1,22 +1,19 @@
 
-public class Abelinha extends Personagem {
-
-
-    public Abelinha() {
-        super(50); 
-    }
+public class Abelinha extends Personagem implements IArmamento {
 
     @Override
     public void mover() {
-  
-        setEnergia(energia - 2);
-
-        System.out.println("Abelha se moveu. Energia atual: " + energia);
+      System.out.print("Voando nos 360 graus.. na doida, Game Over sem polenização..");
     }
 
     @Override
-    public void fazerSom() {
-
-        System.out.println("Fazendo som: Bzzzz!");
+    public void atacar() {
+        System.out.println("Ataca com ferrão!");
     }
+    
+    @Override
+    public void fazerSom() {
+      
+    }
+
 }

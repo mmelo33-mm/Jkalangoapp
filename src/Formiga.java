@@ -1,22 +1,26 @@
-
-public class Formiga extends Personagem {
-
-  
-    public Formiga() {
-        super(100); 
+public class Formiga extends Personagem implements IArmamento{
+    public Formiga(){
+        super();
+    }
+    public Formiga(int energia) {
+        super(energia);
+        super.getEnergia();
     }
 
     @Override
     public void mover() {
-        
-        setEnergia(energia - 3);
-       
-        System.out.println("Formiga se moveu. Energia atual: " + energia);
+        System.out.println("anda só pra frente, se perder a rota Game Over");
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println("Ataca com 4 formas!");
     }
 
     @Override
     public void fazerSom() {
-        
-        System.out.println("Fazendo som: Fzzzz!");
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'fazerSom'");
     }
+
 }

@@ -1,22 +1,24 @@
+public class Kalango extends Personagem implements IArmamento {
 
-public class Kalango extends Personagem {
-
-
-    public Kalango() {
-        super(150); 
+    public Kalango(int energia) {
+        super(energia);
+        //TODO Auto-generated constructor stub
     }
 
     @Override
     public void mover() {
-
-        setEnergia(energia - 5);
-
-        System.out.println("Kalango se moveu. Energia atual: " + energia);
+       System.out.println("Terreste com velocidade");
     }
+
 
     @Override
-    public void fazerSom() {
-
-        System.out.println("Fazendo som: Tssss!");
+    public void atacar() {
+        System.out.println("Ataca de 2 formas");
     }
+    @Override
+    public void fazerSom() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'fazerSom'");
+    }
+
 }
