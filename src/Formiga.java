@@ -9,7 +9,7 @@ public class Formiga extends Personagem implements IArmamento{
 
     @Override
     public void mover() {
-        System.out.println("anda só pra frente, se perder a rota Game Over");
+        System.out.println("Formiga: anda só pra frente, se perder a rota Game Over");
     }
 
     @Override
@@ -19,8 +19,7 @@ public class Formiga extends Personagem implements IArmamento{
 
     @Override
     public void fazerSom() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'fazerSom'");
+        System.out.println("sssssss");
     }
 
 }

@@ -13,7 +13,7 @@ public class Abelinha extends Personagem implements IArmamento {
     
     @Override
     public void fazerSom() {
-      
+      System.out.println("zzzzzzzz");
     }
 
 }
