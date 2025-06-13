@@ -6,6 +6,7 @@ import javax.swing.JButton; //(Botoes interativos)
 import javax.swing.JLabel; //(exibição de texto e imagens)
 import javax.swing.ImageIcon; //carregamento de imagens
 import javax.swing.JOptionPane; // caixa de dialogo simples
+import javax.swing.JTextPane;
 
 //classes awt (java.awt)
 import java.awt.FlowLayout; //gerenciador de layout para
@@ -21,9 +22,9 @@ public class JSplash extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //quando fechar a aplicação, encerra o processo liberando memoria
         setLocationRelativeTo(null); //centralizar a janela na tela
         setLayout(new FlowLayout()); //como vai organizar os componentes
-
+        
         //adicionando o botao
-        JButton startButton = new JButton("Start");
+        JButton startButton = new JButton("Iniciar");
         add(startButton);
 
         //adicionando o evento ao botão
@@ -31,7 +32,8 @@ public class JSplash extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(JSplash.this,"JKalango");
+            new JIntro();
+            dispose();
             }
         
     

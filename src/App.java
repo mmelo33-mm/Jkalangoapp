@@ -1,4 +1,5 @@
 import br.com.jkalango.view.JIntro;
+import br.com.jkalango.view.JMissaoObjeto;
 import br.com.jkalango.view.JSplash;
 
 public class App {
@@ -16,8 +17,9 @@ public class App {
         k.mover();
         k.atacar();
 
-        new JIntro();
-        //new JSplash();
+        new JSplash();
+        
+        
 
         //objetos
         //objeto  kalango
